@@ -12,20 +12,13 @@ from datetime import datetime as dt
 d = dt.now().day
 m = dt.now().month
 stringD = dt.now().strftime("%A")
-# print(stringD)yy
+print(dt.now().strftime("%A, %B %d, %Y"))
 
-
+if stringD == "Tuesday":
+    print(f"Hello! @channel Just a quick reminder about our Deep Work Session scheduled for today.\n{':clock2:'} When: {m}/{d}, 2:00 PM – 4:00 PM.\n{':computer:'}Where: Zoom http://bit.ly/cti-launch-deep-work ")
 if stringD == "Wednesday":
-    # client.chat_postMessage(channel='#bot-message', text = f"Hello! @channel Just a quick reminder about our Deep Work Session scheduled for today.\n{':clock2:'} When: {m}/{d}, from 12 pm to 2pm.\n{':computer:'} Where: CSUMB BIT Building (506), Room: 111")
-    # print("M")
-    print(f"Hello! @channel Just a quick reminder about our Deep Work Session scheduled for today.\n{':clock2:'} When: {m}/{d}, from 4 pm to 6 pm.\n{':computer:'}Where: CSUMB, 045 Coast Hall room 103")
-
+    print(f"Hello! @channel Just a quick reminder about our Deep Work Session scheduled for today.\n{':clock2:'} When: {m}/{d}, 2:00 PM – 4:00 PM.\n{':computer:'}Where: Zoom http://bit.ly/cti-launch-deep-work ")
+if stringD == "Thursday":
+    print(f"Hello! @channel Just a quick reminder about our Deep Work Session scheduled for today.\n{':clock2:'} When: {m}/{d},  6:00 PM – 8:00 PM.\n{':computer:'}Where: Zoom http://bit.ly/cti-launch-deep-work ")
 if stringD == "Friday":
-    i = input("It the guided: ")
-    print(f"Hello! @channel Just a quick reminder about our Deep Work Session scheduled for today.\n{':clock2:'} When: {m}/{d}, from 2 pm to 4pm.\n{':computer:'} Where: CSUMB BIT Building (506), Room: 223")
-    # client.chat_postMessage(channel='#bot-message', text = f"Hello! @channel Just a quick reminder about our Deep Work Session scheduled for today.\n{':clock2:'} When: {m}/{d}, from 2 pm to 4pm.\n{':computer:'} Where: CSUMB BIT Building (506), Room: 108")
-    
-    if i.lower() =="y":
-        print(f"Hello! @channel Just a quick reminder about our Guided Session scheduled for today. {':clock2:'} When: {m}/{d} from 4pm to 6pm. {':computer:'} Where: CSUMB BIT Building (506), Room: 223.\n{':pizza:'} Pizza will be offered.\n{':droplet:'} Bring your own beverage")
-        # client.chat_postMessage(channel='#bot-message', text = f"Hello! @channel Just a quick reminder about our Guided Session scheduled for today. {':clock2:'} When: {m}/{d} from 4pm to 6pm. {':computer:'} Where: CSUMB BIT Building (506), Room: 111.\n{':pizza:'} Pizza will be offered.\n{':droplet:'} Bring your own beverage")
-
+    print(f"Hello! @channel Just a quick reminder about our Deep Work Session scheduled for today.\n{':clock2:'} When: {m}/{d},  2:00 PM – 4:00 PM.\n{':computer:'}Where: <http://bit.ly/cti-launch-deep-work|Zoom> ")
