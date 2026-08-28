@@ -44,5 +44,3 @@ if stringD == "Thursday":
 if stringD == "Friday":
     print(f"Hello! @channel Just a quick reminder about today's office hours scheduled.\n{':clock2:'} When: {m}/{d},  4:00 PM – 6:00 PM.\n{':computer:'}Where: Zoom  https://csumb.zoom.us/j/83142158374")
     client.chat_postMessage(channel='#cst-329-fall26', text=f"Hello! @channel Just a quick reminder about today's office hours scheduled.\n{':clock2:'} When: {m}/{d},  4:00 PM – 6:00 PM.\n{':computer:'}Where: Zoom  https://csumb.zoom.us/j/83142158374")
-    
-# new test
